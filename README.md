@@ -1,4 +1,4 @@
-# app25june
+# Flutter-CGIApp
 
 A new Flutter project.
 
