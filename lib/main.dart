@@ -10,6 +10,10 @@ class MyApp extends StatelessWidget {
     var url = Uri.http("192.168.1.2", "/cgi-bin/cmd.py", {"x": cmd, "y": cn});
     var response = await http.get(url);
     print(response.body);
+    setState(() {
+      output = response.body;
+    });
+  }
     // print(cmd);
   }
 
